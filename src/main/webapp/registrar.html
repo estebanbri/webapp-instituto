@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registrar alumno</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<style>
+.wrapper {
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Registrar (o Actualizar) alumno</h2>
+<form action="controladorregistro.do" method="post" >
+	<div class="form-group">
+	DNI<br> <input class="form-control" type="text" name="input_dni" placeholder="DNI" required> <br>
+	Apellido<br> <input class="form-control" type="text" name="input_apellido" placeholder="Apellido" required> <br>
+	Nombre<br> <input class="form-control" type="text" name="input_nombre" placeholder="Nombre" required> <br>
+	Adeuda<br> <input class="form-control" type="text" name="input_adeuda" placeholder="Adeuda" required> <br> <br> 
+	<div class="wrapper">
+		<input class="btn btn-primary btn-lg" type="submit" value="Registrar">
+	</div>
+</form>
+<br>
+Nota: para actualizar tenes que escribir el DNI del alumno que queres actualizar los datos, y los demas campos los rellenas con datos actualizados.
+</body>
+</html>

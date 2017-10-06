@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>celsawebapp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>controladorregistro</servlet-name>
+    <servlet-class>celsawebapp.ControladorRegistro</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controladorregistro</servlet-name>
+    <url-pattern>/controladorregistro.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>controladorver</servlet-name>
+    <servlet-class>celsawebapp.ControladorVer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>controladorver</servlet-name>
+    <url-pattern>/verbasededatos.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ControladorBusqueda</servlet-name>
+    <servlet-class>celsawebapp.ControladorBusqueda</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControladorBusqueda</servlet-name>
+    <url-pattern>/controladorbusqueda.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ControladorEliminar</servlet-name>
+    <servlet-class>celsawebapp.ControladorEliminar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControladorEliminar</servlet-name>
+    <url-pattern>/controladoreliminar.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

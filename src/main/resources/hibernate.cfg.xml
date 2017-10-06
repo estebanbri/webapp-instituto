@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+
+    <session-factory>
+
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/alumnodb</property>
+        <property name="connection.username">esteban</property>
+        <property name="connection.password">9195</property>
+
+        <!-- JDBC connection pool (use the built-in) -->
+        <property name="connection.pool_size">1</property>
+
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+
+		<property name="current_session_context_class">thread</property>
+
+        <!-- Names the annotated entity class -->
+        <mapping class="celsawebapp.Alumno"/>
+        
+        
+
+    </session-factory>
+
+</hibernate-configuration>
