@@ -6,11 +6,21 @@
 <title>Busqueda alumno</title>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<style>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<style type="text/css">
 .wrapper {
     text-align: center;
 }
+#spinner{
+	display: none;
+}
 </style>
+<script type="text/javascript">
+function loading(){
+	$("#spinner").show();
+	
+}
+</script>
 </head>
 <body>
 <h2>Busqueda alumno</h2>
@@ -18,7 +28,9 @@
 	Ingrese DNI<br>
 	<input class="form-control" type="text" name="input_dni_busqueda" placeholder="DNI" required> <br>
 	<div class="wrapper">
-		<button class="btn btn-success btn-lg" type="submit"><i class="fa fa-search fa-3x"></i>&nbsp; Buscar</button>
+		<button class="btn btn-success btn-lg" type="submit" id="anchorBD" onclick="loading();"><i class="fa fa-search fa-3x"></i>&nbsp; Buscar</button>
+		<br><br>
+		<i id="spinner" class="fa fa-spinner fa-spin fa-3x"></i>
 	</div>
 </form>
 </body>
