@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Sistema de Alumnos</title>
+<script src="https://use.fontawesome.com/ec60c23b24.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<title>Sistema de Alumnos</title>
+
 <style type="text/css">
 .center_div{
     margin: 50px auto;
     width:20% /* value of your choice which suits your alignment */
 }
 </style>
+<script type="text/javascript">
+function loading(){
+	var anchor = document.getElementById('anchor');
+	anchor.textContent = "Cargando datos de la BD...";
+}
+</script>
 </head>
 <body>
-<div class="container center_div">
-<form action="busqueda.html">
-<input type="submit" class="btn btn-primary" value="Busqueda de alumno" ><br><br>
-</form>
-<br>
-<form action="registrar.html">
-<input type="submit" class="btn btn-primary" value="Registrar / Actualizar datos alumno" ><br><br>
-</form>
-<br>
-<form action="verbasededatos.do">
-<input type="submit" class="btn btn-primary" value="Ver base de datos" ><br><br>
-</form>
+<div id="contenedor" class="container center_div">
+
+<a href="busqueda.html" class="btn btn-success btn-lg">
+      <i class="fa fa-search fa-3x" aria-hidden="true"></i>&nbsp;  Busqueda de alumno 
+</a>
+<br><br>
+<a href="registrar.html" class="btn btn-success btn-lg">
+      <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-pencil fa-3x" aria-hidden="true"></i>&nbsp;  Registrar / Actualizar datos alumno 
+</a>
+<br><br>
+<p>
+<a id="anchor" onclick="loading();" href="verbasededatos.do" class="btn btn-success btn-lg">
+      <i class="fa fa-database fa-3x" aria-hidden="true"></i>&nbsp;  Ver base de datos
+</a>
+</p>
+
 </div>
 
 
