@@ -15,6 +15,7 @@
     bottom: 10px;
 }
 </style>
+<link rel="stylesheet" type="text/css" href="miestilo.css">
 </head>
 <body>
 
