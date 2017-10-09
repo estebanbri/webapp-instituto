@@ -17,7 +17,8 @@
 <script type="text/javascript">
 function loading(){
 	var anchor = document.getElementById('anchorBD');
-	anchor.textContent = "Cargando datos de la BD...";
+	anchor.textContent = " Cargando datos de la BD...";
+	$("#anchorBD").prepend('<i class="fa fa-database fa-3x" aria-hidden="true"></i>'); 
 	$("#anchorBD").append('&nbsp; <i class="fa fa-spinner fa-spin"></i>'); 
 }
 </script>
