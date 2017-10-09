@@ -9,7 +9,6 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  
   <servlet>
     <servlet-name>controladorregistro</servlet-name>
     <servlet-class>celsawebapp.ControladorRegistro</servlet-class>
@@ -18,7 +17,6 @@
     <servlet-name>controladorregistro</servlet-name>
     <url-pattern>/controladorregistro.do</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>controladorver</servlet-name>
     <servlet-class>celsawebapp.ControladorVer</servlet-class>
@@ -27,7 +25,6 @@
     <servlet-name>controladorver</servlet-name>
     <url-pattern>/verbasededatos.do</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ControladorBusqueda</servlet-name>
     <servlet-class>celsawebapp.ControladorBusqueda</servlet-class>
@@ -36,7 +33,6 @@
     <servlet-name>ControladorBusqueda</servlet-name>
     <url-pattern>/controladorbusqueda.do</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ControladorEliminar</servlet-name>
     <servlet-class>celsawebapp.ControladorEliminar</servlet-class>
@@ -45,5 +41,13 @@
     <servlet-name>ControladorEliminar</servlet-name>
     <url-pattern>/controladoreliminar.do</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <description></description>
+    <servlet-name>EnvioMail</servlet-name>
+    <servlet-class>celsawebapp.EnvioMail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EnvioMail</servlet-name>
+    <url-pattern>/enviomail.do</url-pattern>
+  </servlet-mapping>
 </web-app>

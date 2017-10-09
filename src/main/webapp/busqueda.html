@@ -24,16 +24,27 @@ function loading(){
 <link rel="stylesheet" type="text/css" href="miestilo.css">
 </head>
 <body>
-<h2>Busqueda alumno</h2>
-<form action="controladorbusqueda.do" method="post" >
-	Ingrese DNI<br>
-	<input class="form-control" type="text" name="input_dni_busqueda" placeholder="DNI" required> <br>
-	<div class="wrapper">
-		<button class="btn btn-success btn-lg" type="submit" onclick="loading();"><i class="fa fa-search fa-3x"></i>&nbsp; Buscar</button>
-		<br><br>
-		<i id="spinner" class="fa fa-spinner fa-spin fa-3x"></i>
+
+	<div class="centrar">
+		<i class="fa fa-search fa-2x" aria-hidden="true"></i>
+
+		<h2 id="inline" class="centertext">Busqueda alumno</h2>
 	</div>
-</form>
+
+	<form action="controladorbusqueda.do" method="post" >
+		Ingrese DNI<br>
+		<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+			<div class="input-group-addon">DNI</div>
+				<input class="form-control" type="text" name="input_dni_busqueda" required> <br>
+		</div>
+	
+		<br><br>
+		<div class="wrapper">
+			<button class="btn btn-success btn-lg" type="submit" onclick="loading();"><i class="fa fa-search fa-3x"></i>&nbsp; Buscar</button>
+			<br><br>
+			<i id="spinner" class="fa fa-spinner fa-spin fa-3x"></i>
+		</div>
+	</form>
 </body>
 </html>
 

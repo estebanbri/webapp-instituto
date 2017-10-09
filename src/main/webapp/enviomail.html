@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="miestilo.css">
 <meta charset="UTF-8">
 <title>Envio de mail</title>
+<script src="https://use.fontawesome.com/ec60c23b24.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="miestilo.css">
 </head>
 <body>
 
-<h2>Envio de mail a alumnos</h2>
+	<div class="centrar">
+		<i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>
+
+		<h2 id="inline" class="centertext">&nbsp;Envio de mail a alumnos</h2>
+	</div>
+
+	<br> <br>
+	
+	<form id="miform" action="enviomail.do" method="post">
+		<div class="form-group">
+	   		<label for="input1">Email:</label>
+			<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				<div class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i></div>
+					<input id="input1" type="email" name="input_mail" class="form-control" placeholder="ejemplo@ejemplo.com,..." required><br><br>
+			</div>
+			<label for="input2">Mensaje:</label>
+			<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+				<div class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+					<textarea id="input2" class="form-control" form="miform" name="input_textarea" rows="10" cols="100" placeholder="Escriba el mensaje aqui..." required></textarea><br><br>
+			</div>
+			<br><br>
+			<div class="wrapper">
+				<button class="btn btn-success btn-lg" type="submit"><i class="fa fa-paper-plane fa-2x" aria-hidden="true"></i>&nbsp;  Enviar e-mail </button>
+			</div>
+		</div>
+	</form>
+
+
+
 
 </body>
 </html>
