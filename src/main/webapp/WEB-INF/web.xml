@@ -44,7 +44,7 @@
   <servlet>
     <description></description>
     <servlet-name>EnvioMail</servlet-name>
-    <servlet-class>celsawebapp.EnvioMail</servlet-class>
+    <servlet-class>celsawebapp.ControladorEnvioMail</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>EnvioMail</servlet-name>
